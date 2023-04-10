@@ -5,5 +5,5 @@ include_directories(${Pangolin_INCLUDE_DIRS})
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
-add_executable(SimpleDisplay main.cpp)
+add_executable(SimpleDisplay SimpleDisplay.cpp)
 target_link_libraries(SimpleDisplay ${Pangolin_LIBRARIES} ${OpenCV_LIBS})
